@@ -1,0 +1,315 @@
+
+
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: rgb(233, 228, 225);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.profile, .about, .skills, .products, .message{
+  width: 90%;
+  max-width: 850px;
+  padding: 0 2rem;
+  margin-bottom: 20rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  font-family:'Times New Roman', Times, serif;
+}
+
+
+/* ヘッダー */
+
+header {
+  height: 5rem;
+  background: rgb(63, 45, 32, 0.9);
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  text-align: center;
+  letter-spacing: 4px;
+  color: antiquewhite;
+  font-weight: 100;
+}
+
+
+
+
+.title {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  margin: 15rem 0 10rem 0;
+  position: relative;
+}
+
+
+/* タイトル部分の下線 */
+.title::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 4px;
+  background: rgba(122, 88, 63, 0.8);
+  position: absolute;
+  bottom: -26px;
+  left: calc(50% - 150px);
+  border-radius: 10%;
+}
+
+/* profile */
+
+.profile {
+  margin-bottom: 20rem;
+}
+
+.profile-container {
+  padding: 1rem;
+}
+
+.p-image {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.p-image img{
+  border-radius: 50%;
+  width: 100%;
+}
+
+.p-text {
+  padding-top: 1rem;
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-text ul {
+  list-style: none;
+}
+.p-text li {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+}
+
+
+/* about部分 */
+
+.about {
+  text-align: center;
+
+}
+
+.about p {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+/* skills部分 */
+
+.icons {
+  font-size: 6rem;
+  display: inline-block;
+}
+
+#html-icon {
+  color: rgb(197, 102, 57);
+  margin-right: 1rem;
+}
+
+
+#html-icon::after {
+  content: "HTML";
+  display: block;
+  font-size: 1.2rem;
+}
+
+#css-icon {
+  color: rgb(70, 70, 194);
+}
+
+#css-icon::after {
+  content: "CSS";
+  display: block;
+  font-size: 1.2rem;
+}
+
+#js-icon {
+  color: darkgoldenrod;
+}
+
+#js-icon::after {
+  content: "JavaScript";
+  display: block;
+  font-size: 1.2rem;
+}
+
+#php-icon {
+  color: rgba(141, 39, 141, 0.726);
+}
+
+#php-icon::after {
+  content: "PHP";
+  display: block;
+  font-size: 1.2rem;
+}
+
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  border-radius: 0.5rem;
+  background-color: rgb(160, 160, 160, 0.2);
+  width: 40%;
+  min-height: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.item-text {
+  line-height: 1.2rem;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  text-align: left;
+  word-break: break-all;
+}
+
+.item-none {
+  background-color: rgb(233, 228, 225);
+}
+
+
+/* PRODUCTS部分 */
+
+.products-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  background-color: rgb(160, 160, 160, 0.5);
+  border-radius: 10px;
+  width: 42%;
+  padding: 2em;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.products-image {
+  background-color: #fff;
+  object-fit: contain;
+  height: 8rem;
+  width: 100%;
+  border: rgb(63, 45, 32, 0.8) 5px solid;
+}
+
+.products-image:hover {
+  opacity: 0.8;
+}
+
+.products-title {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.products-text {
+  margin: 24px auto;
+  word-wrap: break-word;
+  width: 80%;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+.products-text-sub {
+  font-size: 0.8rem;
+  color: rgba(165, 42, 42, 0.705);
+}
+
+.message {
+  width: 70%;
+  max-width: 40rem;
+}
+
+.message-text {
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, rgba(237, 119, 128, 0) 0%, rgb(237, 119, 128, 0) 50%, #fff 0%, #fff 100%),linear-gradient(180deg, rgba(237, 119, 128, 0) 0%, rgb(237, 119, 128, 0) 95%, rgb(63, 45, 32, 0.8) 100%);
+  background-size: 8px 100%,100% 2em;
+  line-height: 2;
+  border: solid 2px rgb(63, 45, 32, 0.8);
+  padding: 2em 1em 1.98em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+
+}
+
+.message-top {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.message-bottom {
+  text-align: right;
+}
+
+@media screen and (max-width:950px) and (min-width:550px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width:550px) {
+  html {
+    font-size: 65%;
+  }
+  
+  .p-image {
+    width: 50%;
+  }
+  .p-text {
+    width: 90%;
+  }
+
+  .item {
+    display: block;
+    width: 80%;
+  }
+
+  .products-container {
+    display: block;
+  }
+  .product {
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+  .products-text {
+    line-height: 1.5rem;
+  }
+}
+
