@@ -187,7 +187,7 @@ header h1 {
 }
 
 .item-text {
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   padding: 1rem;
   margin-top: 1.2rem;
   text-align: left;
@@ -240,9 +240,9 @@ header h1 {
   margin: 24px auto;
   word-wrap: break-word;
   width: 80%;
-  font-size: 14px;
+  font-size: 1.1rem;
   text-align: left;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 }
 
 .products-text-sub {
@@ -296,9 +296,14 @@ header h1 {
     width: 90%;
   }
 
+  about p {
+    font-size: 1.1rem;
+  }
+
   .item {
     display: block;
     width: 80%;
+    font-size: 1.3rem;
   }
 
   .products-container {
